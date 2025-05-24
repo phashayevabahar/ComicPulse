@@ -12,12 +12,12 @@ You can read about the comics, you can add books to your cart, you can cooperate
 ## Our jobs:  
 
 ### Oqtay  
-> Oqtay is the main idea owner. ComicPulse is his idea. And Oqtay established the basic structure of the page.  
+> Oqtay is the main idea owner. ComicPulse is his idea. And Oqtay established the basic structure of the site.  
 
 ### Sabir  
 
-> Sabir gave the page a little dynamism. He added the cart to the page.    
+> Sabir created a JSON file to manage the data used on the site, ensuring that the data was stored and used in a structured manner and also bringing dynamism to the site.   
 
 ### Bahar  
 
-> Bahar added a search function to the page.  
+> Bahar added a search function to the site.  

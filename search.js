@@ -70,7 +70,7 @@ function performSearch() {
   }
 
   if (!productsData || productsData.length === 0) {
-    resultsContainer.innerHTML = "<p>Məhsul məlumatları yüklənməyib</p>";
+    resultsContainer.innerHTML = "<p>Product data not loaded</p>";
     resultsContainer.style.display = "block";
     console.log("No products data available"); // Debug log
     return;
@@ -94,14 +94,14 @@ function displaySearchResults(products, searchTerm) {
   const resultsContainer = document.getElementById("searchResults");
 
   if (!products.length) {
-    resultsContainer.innerHTML = `<p>"${searchTerm}" üçün heç bir nəticə tapılmadı</p>`;
+    resultsContainer.innerHTML = `<p>No results found for "${searchTerm}"</p>`;
     resultsContainer.style.display = "block";
     return;
   }
 
   resultsContainer.innerHTML = `
         <div class="search-results-header">
-            <h3>"${searchTerm}" üçün tapılan nəticələr (${products.length})</h3>
+            <h3>results found for "${searchTerm}" (${products.length})</h3>
         </div>
         <div class="search-results-grid">
             ${products
