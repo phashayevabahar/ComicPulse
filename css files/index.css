@@ -1,79 +1,8 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   background-color: #f5f5f5;
   color: #333;
-}
-
-/* Header & Navigation */
-.header {
-  background: linear-gradient(135deg, #2c3e50, #1a1a2e);
-  color: white;
-  padding-bottom: 20px;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 5%;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo {
-  height: 40px;
-  width: auto;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  padding: 5px 10px;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-}
-
-nav a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-/* Hero Section */
-.hero {
-  text-align: center;
-  padding: 60px 20px 40px;
-  background: linear-gradient(to bottom, #2c3e50, #1a1a2e);
-  color: white;
-}
-
-.hero h1 {
-  font-size: 2.8rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  opacity: 0.9;
 }
 
 /* Main Content */
@@ -134,6 +63,20 @@ main {
   margin-bottom: 6px;
 }
 
+.comic-card a {
+    display: inline-block;
+    background-color: #2c3e50;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.comic-card a:hover {
+    background-color: #1a1a2e;
+}
+
 /* Buttons */
 .add-to-cart-button {
   display: inline-block;
@@ -167,52 +110,71 @@ main {
   background-color: #cc0000;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #2c3e50;
-  color: white;
-  margin-top: 40px;
-}
-
-footer a {
-  color: #f8f9fa;
-  text-decoration: none;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .comic-card {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .comic-card img {
-    width: 100%;
-    max-width: 300px;
-  }
-
-  .comic-info {
-    align-items: center;
-    text-align: center;
-  }
-}
-
 .genre-heading {
   font-size: 1.5rem;
   margin: 40px 0 20px;
   color: #ff0055;
   border-bottom: 2px solid #ff0055;
   padding-bottom: 5px;
+}
+
+/*For search function*/
+#searchResults {
+    margin-top: 8%;
+    color:dimgray;
+    width: 100px;
+}
+.search-container {
+    position: relative;
+    display: block;
+    margin: 0% 0% 0% 60%;
+}
+    
+.search-toggle {
+    font-size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+    
+.search-panel {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    z-index: 1000;
+    width: 250px;
+    gap: 5px;
+}
+    
+.search-panel.active {
+    display: block;
+}
+    
+.search-panel input {
+    padding: 6px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+    
+.search-panel button {
+    padding: 6px 10px;
+    margin-left: 5px;
+    background-color:indigo;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+    
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+    color: black;
 }
 
