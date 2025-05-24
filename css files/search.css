@@ -1,0 +1,72 @@
+/* Axtarış nəticələri üçün stil */
+.search-results-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: none;
+}
+
+.search-panel.active ~ .search-results-container {
+    display: block;
+}
+
+.search-results-header {
+    margin-bottom: 20px;
+}
+
+.search-results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-info h4 {
+    margin: 0 0 10px;
+    font-size: 1.1rem;
+}
+
+.product-info .author {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.product-info .description {
+    font-size: 0.9rem;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.product-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+    padding: 0 2px;
+}
