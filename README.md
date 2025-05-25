@@ -9,6 +9,35 @@
 
 You can read about the comics, you can add books to your cart, you can cooperate with us. You can contact to us with this email: hesapy040@gmail.com  
 
+## Project structure: 
+```bash
+ComicPulse/  
+│    ├── .vscode/  
+│         └── settings.json
+│    ├── assets/
+│    │    ├── books/
+│    │    ├── images/
+│    │    ├── logo.png
+│    │    └── toradoraweb.jpg
+│    ├── css files/
+│    │    ├── cart.css
+│    │    ├── confirm.css
+│    │    ├── index.css
+│    │    ├── information.css
+│    │    ├── login.css
+│    │    ├── main.css
+│    │    ├── search.css
+│    │    └── style.css
+│    ├── cart.html
+│    ├── confirm.html
+│    ├── index.html
+│    ├── information.html
+│    ├── login.html
+│    ├── java.js
+│    ├── search.js
+│    ├── products.json
+│    └── README.md
+```
 ## Our jobs:  
 
 ### Oqtay  
